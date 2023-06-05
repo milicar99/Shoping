@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Shopping.Api.DTO.UserDTO;
 using Shopping.Api.Interfaces.IServices;
+using Shopping.Api.Services;
 using System.Data;
 
 namespace Shopping.Api.Controllers
@@ -13,7 +14,6 @@ namespace Shopping.Api.Controllers
     {
         private readonly IUserService _userService;
         private readonly IPhotoService _photoService;
-
         public UserController(IUserService userService, IPhotoService photoService) 
         {
             _userService = userService;
